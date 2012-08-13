@@ -12,10 +12,16 @@
 <div>
   <h2>jQuery reduce comparison</h2>
   <p>See console.<p>
+
+  <hr>
+  <select id="students"></select>
 </div>
   
 
 <script>
+  // Reduce comparison between native and plugin.
+  //
+
   // Create number array.
   var numericArray = [1, 5, 6, 9, 3, -15];
 
@@ -52,6 +58,28 @@
   // jQuery reduce objects.
   var jReduce = objectArray.reduce(reduceObjects, { num: 0, str: ''});
   console.log(jReduce);
+
+
+  //===========================================================================
+  // Using reduce to javascript objects into HTML.
+
+  var data = {
+    instructor: 'Dr. Leet',
+    course: 'hacking 101',
+    students: [
+      { id: 2, name: 'Amy', gpa: 3.0 },
+      { id: 4, name: 'Bob', gpa: 3.5 },
+      { id: 7, name: 'Carl', gpa: 4.0 },
+      { id: 8, name: 'Doug', gpa: 2.0 },
+      { id: 9, name: 'Eve', gpa: 2.5 }
+    ]
+  };
+
+  var optionHtml = $(data.students).reduce(function(acc, item) {
+    return acc + '<option value="' + item.id + '">' + item.name + '</option>';
+  }, '<option value="0">Select student</option>');
+
+  $('#students').html(optionHtml);
 
 </script>
 
