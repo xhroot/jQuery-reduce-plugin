@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="jQuery.reduce.js"></script>
+
+</head>
+<body>
+
+<div>
+  <h2>jQuery reduce comparison</h2>
+  <p>See console.<p>
+</div>
+  
+
+<script>
+  // Create number array.
+  var numericArray = [1, 5, 6, 9, 3, -15];
+
+  // Numeric reduce function.
+  var reduceSum = function(acc, item) {
+      return acc + item;
+  };
+
+  // Native reduce, seed with 3.
+  var nReduceSum = numericArray.reduce(reduceSum, 3);
+  console.log(nReduceSum);
+
+  // jQuery reduce, seed with 3.
+  var jReduceSum = $(numericArray).reduce(reduceSum, 3);
+  console.log(jReduceSum);
+
+  // Create object array.
+  var objectArray = $(numericArray).map(function(index, item) {
+      return { num: item, str: 'str' + item };
+  });
+
+  // Object reduce function.
+  var reduceObjects = function(acc, item) {
+    return { 
+      num: acc.num + item.num, 
+      str: item.str + acc.str 
+    };
+  };
+
+  // Native reduce objects.
+  var nReduce = objectArray.get().reduce(reduceObjects, { num: 0, str: ''});
+  console.log(nReduce);
+
+  // jQuery reduce objects.
+  var jReduce = objectArray.reduce(reduceObjects, { num: 0, str: ''});
+  console.log(jReduce);
+
+</script>
+
+</body>
+</html>
+
