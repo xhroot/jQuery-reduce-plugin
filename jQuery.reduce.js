@@ -24,14 +24,15 @@
 
     // Must have either non-empty array or seed.
     var len = this.length;
-    if ( len === 0 && seed === undefined ) 
+    var hasSeed = seed !== undefined;
+    if ( len === 0 && !hasSeed ) 
       throw new TypeError( 'Reduce of empty array with no initial value' );
 
     // Check seed first to initialize accumulator, else use first array item.
-    var acc = seed || this[ 0 ];
+    var acc = hasSeed ? seed : this[ 0 ];
 
     // Start count at 1 if first value is used instead of seed.
-    var i = seed ? 0 : 1;
+    var i = hasSeed ? 0 : 1;
 
     // Execute callback using accumulator and current item.
     for (; i < len; i++ ) {
