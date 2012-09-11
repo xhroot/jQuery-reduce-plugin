@@ -1,7 +1,8 @@
 jQuery-reduce-plugin
 ====================
 
-- *Author*: Antonio Rodriguez
+- *Author*: Antonio Rodriguez, dev@xhroot.com
+- *Description*: reduce plugin for jQuery
 - *License*: BSD
 
 ###Reduce plugin to supplement jQuery built-ins.
@@ -24,4 +25,3 @@ $(array).reduce(function(accumulator, item) {
 
 ###Unit tests:
 [http://xhroot.github.com/jQuery-reduce-plugin/](http://xhroot.github.com/jQuery-reduce-plugin/)
-
