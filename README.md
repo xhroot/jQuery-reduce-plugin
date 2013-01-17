@@ -44,5 +44,7 @@ var count = $(text.split('')).reduce(getCharTotal, {});
 // Expected counts { 'A': 1, 'C': 3, 'M': 1, 'N': 1, 'P': 6, 'S': 1, 'V': 3, 'a': 86, 'b': 7, 'c': 33, 'd': 19, 'e': 87, 'f': 5, 'g': 7, 'h': 5, 'i': 76, 'l': 56, 'm': 40, 'n': 48, 'o': 32, 'p': 16, 'q': 10, 'r': 39, 's': 66, 't': 64, 'u': 57, 'v': 13 };
 ```
 
+Refer to unit tests for more examples of usage: https://github.com/xhroot/jQuery-reduce-plugin/blob/master/jQuery.reduce.tests.js
+
 ###Unit tests:
 [http://xhroot.github.com/jQuery-reduce-plugin/](http://xhroot.github.com/jQuery-reduce-plugin/)
