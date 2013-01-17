@@ -1,6 +1,6 @@
 {
   "name": "reduce",
-	"version": "v0.1",
+	"version": "0.1",
 	"title": "jQuery array reduce method",
 	"author": {
 		"name": "Antonio Rodriguez",
@@ -11,7 +11,9 @@
 		"type": "BSD",
 		"url": "http://en.wikipedia.org/wiki/BSD_licenses"
 	}],
-	"dependencies": "jquery",
+	"dependencies": {
+      		"jquery": ">=1.5"
+        },
 	"description": "Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value.",
 	"keywords": ["reduce", "fold", "aggregate", "map", "map-reduce", "inject"],
 	"homepage": "https://github.com/xhroot/jQuery-reduce-plugin",
