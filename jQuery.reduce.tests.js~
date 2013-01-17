@@ -159,7 +159,7 @@ test('small object array; seed; fn = html', function() {
   equal(extensionList.html(), expectedHtml, EXTENSION());
 });
 
-// Create character histogram data.
+// Create character historgram data.
 test('character array; empty object seed; fn = histogram', function() {
   var text = 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus vel sapien ac orci mattis dictum. Phasellus gravida tempor mi ac porttitor. Vestibulum vitae velit ac risus malesuada lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus a felis vitae diam lacinia rutrum. Nullam pulvinar, tortor nec aliquam adipiscing, nisl ligula consequat orci, malesuada accumsan neque mi sit amet sapien. Maecenas non ante sem. Proin enim urna, mollis vel placerat ut, egestas vel lorem. Sed vitae velit lacus, at fringilla risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sed massa non tellus elementum interdum. Cras nec magna dolor, sit amet sollicitudin diam. Pellentesque viverra neque eu dolor tristique condimentum ac a nulla. Aenean felis tellus, condimentum malesuada tempor sit amet, lacinia a dui.'
 
