@@ -48,3 +48,4 @@ Refer to unit tests for more examples of usage: https://github.com/xhroot/jQuery
 
 ###Unit tests:
 [http://xhroot.github.com/jQuery-reduce-plugin/](http://xhroot.github.com/jQuery-reduce-plugin/)
+
