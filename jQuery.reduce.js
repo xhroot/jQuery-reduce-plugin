@@ -40,5 +40,9 @@
     }
     return acc;
   };
+  
+  $.reduce = function( arr, callback, seed ) {
+		return arr.reduce( callback, seed )
+	};
 })( jQuery );
 
